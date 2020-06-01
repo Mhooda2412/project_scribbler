@@ -2,14 +2,35 @@
 <html>
 
 <head>
-    <!-- TODO: Include Font Awesome file here -->
-    <!-- TODO: Include Google Fonts file here -->
+    <!--  Font Awesome  -->
+    <link rel="stylesheet" href="../styles/css/font-awesome.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montez&family=Ubuntu+Mono&display=swap" rel="stylesheet">
+     
+    <!-- BootstrapCDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- Custom Css -->
+    <link rel="stylesheet" href="../styles/css/header.css">
+    <link rel="stylesheet" href="../styles/css/postslist.css">
 </head>
 
 <body>
-    <!-- TODO: Include code for header here -->
+    <!-- Header -->
+    <div class="header">
+        <div class="headerLeft">
+            <p class="title">ScriBBler</p>
+            <p class="subTitle">Explore, Imagine, Create</p>
+        </div>
+        <div class="headerRight">
+            <button id="buttonForSignUp" class="btn btn-primary" data-toggle="modal" data-target="#SignUpModal">Sign Up</button>
+            <button id="buttonForSignIn" class="btn btn-primary" data-toggle="modal" data-target="#SignInModal">Sign In</button>
+        </div>
 
-    <!-- ATTENTION: The HTML code for the list of posts has been given to you. You can feel free to add/delete/modify this code. You need to write the proper CSS and JavaScript code corresponding to this page so that the result looks like the screenshots given to you in the Project Statement. -->
+    </div >
 
     <!-- list of all posts starts here -->
     <div>
@@ -125,6 +146,70 @@
 
     </div>
     <!-- list of all posts ends here -->
+    <!-- Sign In modal -->
+    <div class="modal fade" id="SignInModal" tabindex="-1" role="dialog" aria-labelledby="SignInModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="SignInModalLabel">Welcome Back!</h5>
+              <button type="button" class="close"  aria-label="Close" data-dismiss="modal" aria-label="Close">
+                <span><i class="fa fa-times" aria-hidden="true"></i></span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group">
+                      <label for="SignInUserName">Username</label>
+                      <input type="text" class="form-control" id="SignInUserName" required placeholder="Enter your username">
+                    </div>
+                    <div class="form-group">
+                      <label for="SignInPassword">Password</label>
+                      <input type="password" class="form-control" id="SignInPassword" required  placeholder="Enter your password">
+                    </div>
+                    <button type="submit" class="btn btn-success btn-block" >Sign In</button>
+                  </form>
+                  <div class="notMember">
+                    <span>Not a member?</span><button type="button" class="btn btn-link" data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#SignUpModal">Sign Up</button>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    <!--  Sign Up modal  -->
+    <div class="modal fade" id="SignUpModal" tabindex="-1" role="dialog" aria-labelledby="SignUpModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="SignUpModalLabel">Get Started</h5>
+            <button type="button" class="close"  aria-label="Close" data-dismiss="modal" aria-label="Close">
+              <span><i class="fa fa-times" aria-hidden="true"></i></span>
+            </button>
+          </div>
+          <div class="modal-body">
+              <form>
+                <div class="form-group">
+                  <label for="SignUpName">Name</label>
+                  <input type="text" class="form-control" id="SignUpName" required  placeholder="Enter your name">
+                </div>
+                  <div class="form-group">
+                    <label for="SignUpUserName">Username</label>
+                    <input type="text" class="form-control" id="SignUpUserName" required  placeholder="Enter your username">
+                  </div>
+                  <div class="form-group">
+                    <label for="SignUpPassword">Password</label>
+                    <input type="password" class="form-control" id="SignUpPassword" required  placeholder="Enter your password">
+                  </div>
+                  <div class="form-group">
+                    <label for="SignUpConfirmPassword">Confirm Password</label>
+                    <input type="password" class="form-control" id="SignUpConfirmPassword" required placeholder="Re-enter your password">
+                  </div>
+                  <button type="submit" class="btn btn-success btn-block" >Sign Up</button>
+                </form>
+                
+          </div>
+        </div>
+      </div>
+    </div>
 </body>
 
 </html>

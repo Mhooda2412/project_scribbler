@@ -30,15 +30,6 @@
     margin-left: 10px;
 }
 
-
-#SignInModal{
-    display: none;
-}
-
-#SignUpModal{
-    display: none;
-}
-
 .notMember{
     /* padding: 1%; */
     text-align: center;

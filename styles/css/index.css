@@ -22,3 +22,8 @@ body{
  .postButtons button{
      margin-left: 10px;
  }
+
+ #createPostButton{
+    display: block;
+    margin: 0 auto;
+ }

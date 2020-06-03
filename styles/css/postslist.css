@@ -1,7 +1,66 @@
 body {
-    height: 100%;
-    width: 100%;
-    position: relative;
-    margin: 0 !important;
+    
     background-color: #ffeedd ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 !important;
+    background-size: 100% cover!important;
+    display: block;
+}
+
+
+.card-text{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;   
+    margin-bottom: 0px;
+
+}
+
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-body{
+    border-radius: 0px 25px 25px 0px;
+    padding-bottom: 0px;
+}
+
+.card{
+    border-radius: 25px;
+}
+
+.card:hover{
+    box-shadow: 10px 10px 5px grey;
+}
+
+.cardHeader{
+    overflow: hidden;
+}
+
+.cardtitle{
+    float: left;
+}
+.cardIcon{
+    float: right;
+    padding: 0px;
+    
+}
+.deleteYesButton{
+    float: left;
+}
+.deleteNoButton{
+    float: right;
+}
+
+.footerButton{
+    overflow: hidden;
+    margin: 5%;
+    padding: 2%;
+}
+.modal-sm{
+    max-width: 340px;
 }

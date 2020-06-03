@@ -38,3 +38,7 @@
 .notMember button{
     padding: 1%;
 }
+
+i:hover{
+    cursor:pointer;
+}

@@ -47,6 +47,8 @@ body {
 .cardIcon{
     float: right;
     padding: 0px;
+    outline:none;
+    border: none; 
     
 }
 .deleteYesButton{

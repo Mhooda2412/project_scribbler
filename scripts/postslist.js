@@ -10,3 +10,9 @@ $(DeleteModal).on('show.bs.modal',function (event){
     })
     
 })
+
+
+// redirect to post page
+const postPage = ()=>{
+    window.location.href="./html/post.html"
+}

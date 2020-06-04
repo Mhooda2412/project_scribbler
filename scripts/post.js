@@ -39,4 +39,13 @@ function editMode(){
 
 }
 
+var like = 0
+var likeButton = document.getElementById('postLikeButton')
+var LikeDisplay = document.getElementById('likeDisplay')
+function likeCount(){
 
+    likeButton.innerHTML='<i class="fa fa-thumbs-up" aria-hidden="true"></i> Liked'
+    like +=1
+    LikeDisplay.innerHTML= like +' people like this!'
+
+}

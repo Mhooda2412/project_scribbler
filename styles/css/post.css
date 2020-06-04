@@ -19,12 +19,14 @@
         overflow: hidden;
         padding: 2%;
         position: relative;
+        
     }
     
     .authorName{
         float: left;
         font-family: 'Ubuntu Mono', monospace;
         font-weight: lighter;
+        
     }
 
     .editButton{
@@ -46,4 +48,10 @@
         display: block; 
         overflow: hidden; 
         resize: none;
+    }
+
+
+    #postLikeButton{
+        margin-top: 2%;
+        margin-bottom: 1%;
     }

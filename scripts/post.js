@@ -1,3 +1,6 @@
+
+
+// onclick of edit/save button make text editable and save the change
 function editMode(){
     var para = document.getElementById('postTitlePara')
     var input = document.getElementById('postTitleInput')
@@ -39,6 +42,9 @@ function editMode(){
 
 }
 
+
+
+// like counter
 var like = 0
 var likeButton = document.getElementById('postLikeButton')
 var LikeDisplay = document.getElementById('likeDisplay')
@@ -48,4 +54,14 @@ function likeCount(){
     like +=1
     LikeDisplay.innerHTML= like +' people like this!'
 
+}
+
+
+// add cooment
+function comment(){
+    var commentDisplay = document.getElementById('comment-display')
+    var comment = document.getElementById('commentTextArea')
+
+    commentDisplay.innerHTML += '<p class="commentDisplay">'+comment.value+'</p>'
+    comment.value = ' '.replace(/\s+/g,' ').trim()
 }

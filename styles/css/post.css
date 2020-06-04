@@ -1,4 +1,10 @@
-    
+    body {
+        background-size: cover;
+        margin: 0 !important;
+        background-size: 100% cover!important;
+        display: block;
+    } 
+
     .postTitle{
         font-weight: bold;
         font-size: x-large;
@@ -54,4 +60,28 @@
     #postLikeButton{
         margin-top: 2%;
         margin-bottom: 1%;
+    }
+    #commentButton{
+        margin-top: 1%;
+        margin-bottom: 1%;
+    }
+
+  
+    #comment-display{
+        margin-bottom: 5%;
+    }
+    .commentDisplay{
+        
+        background-color: white;
+        border-color: #E0E0E0 ;
+        border-style:  solid ;
+        border-width:8px ;
+        border-top-width:15px !important ;
+        border-bottom-width: 15px;
+        
+        padding: 1%;
+        width: 67%;
+        margin: 0px;
+        overflow: hidden;
+
     }

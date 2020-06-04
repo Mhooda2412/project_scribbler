@@ -1,0 +1,40 @@
+    
+    .postTitle{
+        font-weight: bold;
+        font-size: x-large;
+        background-color: white;
+        border-color: pink;
+        word-wrap: break-word;
+        position: relative;
+          
+    }
+
+    .postTitle:focus{
+        box-shadow: none;
+        border-color: pink ;
+    }
+
+
+    .PostDescription{
+        overflow: hidden;
+        padding: 2%;
+        position: relative;
+    }
+    
+    .authorName{
+        float: left;
+        font-family: 'Ubuntu Mono', monospace;
+        font-weight: lighter;
+    }
+
+    .editButton{
+        float: right;
+    }
+
+    #postTitleInput{
+        padding: 0px;
+        margin-bottom: 1rem;
+        height: 36px;
+        
+    }
+

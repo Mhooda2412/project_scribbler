@@ -59,9 +59,16 @@ function likeCount(){
 
 // add cooment
 function comment(){
+
+    
     var commentDisplay = document.getElementById('comment-display')
     var comment = document.getElementById('commentTextArea')
-
-    commentDisplay.innerHTML += '<p class="commentDisplay">'+comment.value+'</p>'
-    comment.value = ' '.replace(/\s+/g,' ').trim()
+    if(comment.value !=''){
+        commentDisplay.innerHTML += '<p class="commentDisplay">'+comment.value+'</p>'
+        comment.value = ' '.replace(/\s+/g,' ').trim()
+    }
+    else{
+        alert('Comment can not be empty !')
+    }
+    
 }

@@ -38,3 +38,12 @@
         
     }
 
+    #postContentInputId{
+        padding: 0px;
+        margin-bottom: 1rem;
+        box-shadow: none;
+        border-color: pink ;
+        display: block; 
+        overflow: hidden; 
+        resize: none;
+    }
